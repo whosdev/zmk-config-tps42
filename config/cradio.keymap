@@ -35,36 +35,9 @@
                   bindings = <
                      &kp SINGLE_QUOTE  &kp COMMA   &kp DOT     &kp P         &kp Y               &kp F     &kp G        &kp C        &kp R       &kp L
                      &hm LCTRL A       &hm LALT O  &hm LGUI E  &hm LSHFT U   &kp I               &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S
-                     &lt 1 SEMICOLON   &kp Q       &kp J       &kp K         &kp X               &kp B     &kp M        &kp W        &kp V      &lt 1 Z
-                                              &hm LA(LC(LS(LEFT_GUI))) SPACE     &mo 4       &mo 4      &kp RET
+                     &kp SEMICOLON   &kp Q       &kp J       &kp K         &kp X               &kp B     &kp M        &kp W        &kp V      &kp Z
+                                              &hm LA(LC(LS(LEFT_GUI))) SPACE     &trans       &trans      &kp RET
                   >;
-		};
-
-       		left_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &trans  &trans  					&trans &trans 
-		>;
-		};
-		
-		right_layer {
-		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &trans  &trans  			      &trans &trans
-		>;
-		};	
-		
-		tri_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT) &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp LEFT      &kp DOWN      &kp RIGHT     &trans   
-					 &trans &trans  					&trans &trans 
-		>;
 		};	
 	};
-   };
+};
