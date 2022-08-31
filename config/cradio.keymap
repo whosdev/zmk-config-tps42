@@ -5,9 +5,7 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>/* Adjusted Cradio pin arrangement */
-/* The position of Q and B keys have been swapped */
-
+#include <dt-bindings/zmk/keys.h>/* The position of Q and B keys have been swapped */
 &kscan0 {
     input-gpios =
         <&pro_micro  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
@@ -56,25 +54,34 @@
  &kp SINGLE_QUOTE   &kp COMMA     &kp DOT        &kp P                           &kp Y    &kp F        &kp G       &kp C       &kp R        &kp L
       &hm LCTRL A  &hm LALT O  &hm LGUI E  &hm LSHFT U                           &kp I    &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S
   &lt 1 SEMICOLON       &kp Q       &kp J        &kp K                           &kp X    &kp B        &kp M       &kp W       &kp V      &lt 1 Z
-                                                 &mo 1  &hm LA(LC(LS(LEFT_GUI))) SPACE  &kp RET        &mo 2
+                                                 &mo 3  &hm LA(LC(LS(LEFT_GUI))) SPACE  &kp RET        &mo 2
             >;
         };
 
         num_layer {
             bindings = <
- &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-                                                 &trans      &kp LGUI      &kp RGUI        &trans
+ &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0
+    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+                                     &trans   &kp LGUI   &kp RGUI     &trans
             >;
         };
 
         sym_layer {
             bindings = <
- &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans     &trans  &trans
- &trans  &trans  &trans  &trans    &trans    &trans    &trans    &kp UP     &trans  &trans
- &trans  &trans  &trans  &trans    &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-                         &trans  &kp LGUI  &kp RGUI    &trans
+ &trans  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
+                         &trans  &trans  &trans              &trans
+            >;
+        };
+
+        Layer__3 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans
             >;
         };
     };
