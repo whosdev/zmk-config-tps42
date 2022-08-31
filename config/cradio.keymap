@@ -5,7 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>/* The position of Q and B keys have been swapped */
+#include <dt-bindings/zmk/keys.h>
+
 &kscan0 {
     input-gpios =
         <&pro_micro  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
@@ -58,21 +59,21 @@
             >;
         };
 
-        num_layer {
+        Symbols {
             bindings = <
- &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-                                     &trans   &kp LGUI   &kp RGUI     &trans
+ &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+       &trans        &trans        &trans  &kp LEFT_SHIFT  &kp BACKSLASH     &kp SLASH  &kp RIGHT_SHIFT        &trans        &trans     &kp MINUS
+       &trans        &trans        &trans          &trans         &trans     &kp TILDE           &trans        &trans        &trans     &kp EQUAL
+                                                   &trans       &kp LGUI      &kp RGUI           &trans
             >;
         };
 
-        sym_layer {
+        Navigation {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
-                         &trans  &trans  &trans              &trans
+    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
+ &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
+                                &trans  &trans  &trans              &trans
             >;
         };
 
