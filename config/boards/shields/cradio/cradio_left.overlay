@@ -6,7 +6,7 @@
 
 #include "cradio.dtsi"
 
-&kscan {
+&kscan0 {
 		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN";
 		input-gpios
