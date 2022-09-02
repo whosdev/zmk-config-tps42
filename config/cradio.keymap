@@ -49,10 +49,10 @@
 
         Navigation {
             bindings = <
-    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
- &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
-                                &trans  &trans  &trans              &trans
+ &kp ESCAPE  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
+    &kp TAB  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
+     &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
+                             &trans  &trans  &trans              &trans
             >;
         };
 
