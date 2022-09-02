@@ -49,19 +49,19 @@
 
         Navigation {
             bindings = <
- &kp ESCAPE  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
-    &kp TAB  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
-     &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
-                             &trans  &trans  &trans              &trans
+    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans              &trans    &trans               &trans  &trans
+ &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)    &kp UP  &kp LA(RIGHT_ARROW)  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT  &kp DOWN            &kp RIGHT  &trans
+                                &trans  &trans  &trans              &trans
             >;
         };
 
-        Layer__3 {
+        Mission {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+ &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &trans  &trans  &trans  &trans  &trans  &trans
+           &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+           &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                                 &trans  &trans  &trans  &trans
             >;
         };
     };
