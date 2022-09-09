@@ -38,6 +38,11 @@
             bindings = <&mo 3>;
             key-positions = <33 25>;
         };
+
+        both_thumbs {
+            bindings = <&caps_word>;
+            key-positions = <30 33>;
+        };
     };
 
     keymap {
