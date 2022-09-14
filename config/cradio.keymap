@@ -30,7 +30,9 @@
             label = "TAP_DANCE_LAYER_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&lt 1 SEMICOLON>, <&to 1>;
+            bindings =
+                <&lt 1 SEMICOLON>,
+                <&to 1>;
         };
     };
 
@@ -60,7 +62,7 @@
             bindings = <
  &kp SINGLE_QUOTE   &kp COMMA     &kp DOT        &kp P                           &kp Y    &kp F        &kp G       &kp C       &kp R        &kp L
       &hm LCTRL A  &hm LALT O  &hm LGUI E  &hm LSHFT U                           &kp I    &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S
-  &td_lt      &kp Q       &kp J        &kp K                           &kp X    &kp B        &kp M       &kp W       &kp V      &lt 1 Z
+           &td_lt       &kp Q       &kp J        &kp K                           &kp X    &kp B        &kp M       &kp W       &kp V      &lt 1 Z
                                                  &mo 2  &hm LA(LC(LS(LEFT_GUI))) SPACE  &kp RET        &mo 2
             >;
         };
@@ -69,8 +71,8 @@
             bindings = <
  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6     &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0
        &trans        &trans        &trans  &kp LEFT_SHIFT  &kp BACKSLASH     &kp SLASH  &kp RIGHT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS
-       &trans        &trans        &trans          &trans         &trans     &kp TILDE           &trans            &trans             &trans     &kp EQUAL
-                                                   &to 1         &trans        &trans           &to 1
+       &trans        &trans        &trans          &trans         &trans     &kp GRAVE           &trans            &trans             &trans     &kp EQUAL
+                                                    &to 1         &trans        &trans            &to 1
             >;
         };
 
@@ -85,8 +87,8 @@
 
         Mission {
             bindings = <
- &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &trans  &trans  &trans  &trans  &trans  &trans
-           &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &trans  &trans  &trans  &trans  &trans        &trans
+           &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans        &trans
            &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG
                                                                  &trans  &trans  &trans  &trans
             >;
