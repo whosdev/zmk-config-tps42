@@ -1,12 +1,10 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: rbitanga
-      url-base: https://github.com/rbitanga
+      url-base: https://github.com/romones
   projects:
     - name: zmk
-      remote: rbitanga
+      remote: zmkfirmware
       revision: boot_protocol
       import: app/west.yml
   self:
