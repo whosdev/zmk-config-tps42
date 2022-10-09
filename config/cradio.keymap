@@ -88,10 +88,10 @@
 
         Mission {
             bindings = <
- &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)      &trans  &trans  &trans  &trans  &trans        &trans
-           &trans            &trans            &trans            &trans  &bt BT_CLR  &trans  &trans  &trans  &trans        &trans
-           &trans      &bt BT_SEL 2      &bt BT_SEL 1      &bt BT_SEL 0      &trans  &trans  &trans  &trans  &trans  &out OUT_TOG
-                                                                 &trans      &reset  &reset  &trans
+ &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)      &trans             &trans  &trans  &trans  &trans        &trans
+           &trans            &trans            &trans            &trans  &bt BT_CLR    &kp K_SCROLL_UP  &trans  &trans  &trans        &trans
+           &trans      &bt BT_SEL 2      &bt BT_SEL 1      &bt BT_SEL 0      &trans  &kp K_SCROLL_DOWN  &trans  &trans  &trans  &out OUT_TOG
+                                                                 &trans      &reset             &reset  &trans
             >;
         };
     };
