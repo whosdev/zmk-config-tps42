@@ -4,4 +4,4 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
-      artifact_name: firmware-sweep
+      archive_name: firmware-sweep
