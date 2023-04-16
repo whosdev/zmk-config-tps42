@@ -75,10 +75,10 @@
 
         default_layer {
             bindings = <
-   &kp SINGLE_QUOTE   &kp COMMA     &kp DOT                           &kp P   &kp Y   &kp F        &kp G       &kp C       &kp R        &kp L
-            &lt 2 A  &hm LALT O  &hm LGUI E                     &hm LSHFT U   &kp I   &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N      &lt 2 S
-&hm LCTRL SEMICOLON       &kp Q       &kp J                           &kp K   &kp X   &kp B        &kp M       &kp W       &kp V  &hm RCTRL Z
-                                      &mo 3  &hm LA(LC(LS(LEFT_GUI))) SPACE  &kp F1  &kp F2      &kp RET       &mo 3
+   &kp SINGLE_QUOTE   &kp COMMA     &kp DOT                           &kp P   &kp Y      &kp F        &kp G       &kp C       &kp R        &kp L
+            &lt 2 A  &hm LALT O  &hm LGUI E                     &hm LSHFT U   &kp I      &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N      &lt 2 S
+&hm LCTRL SEMICOLON       &kp Q       &kp J                           &kp K   &kp X      &kp B        &kp M       &kp W       &kp V  &hm RCTRL Z
+                                      &mo 3  &hm LA(LC(LS(LEFT_GUI))) SPACE  &kp F1  &kp ENTER        &mo 3       &mo 4
             >;
         };
 
@@ -112,7 +112,7 @@
         Mission {
             bindings = <
 &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &trans  &trans  &trans  &trans  &trans  &trans
-          &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+      &caps_word            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
           &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                               &trans            &trans  &trans  &trans  &trans  &trans
             >;
