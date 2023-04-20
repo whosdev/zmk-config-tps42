@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/romones
   projects:
     - name: zmk
-      remote: zmkrbitanga
-      revision: boot_protocol
+      remote: zmk-urob
+      revision: main
       import: app/west.yml
   self:
     path: config
