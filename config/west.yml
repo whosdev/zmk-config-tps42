@@ -5,7 +5,7 @@ manifest:
     - name: zmk-urob
       url-base: https://github.com/romones
   projects:
-    - name: zmk
+    - name: zmk-urob
       remote: zmk-urob
       revision: main
       import: app/west.yml
