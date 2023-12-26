@@ -4,8 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "includes/settings.dtsi"
-#include "includes/behaviours_homerow_mods.dtsi"
+
 
 #define ___ &trans
 
